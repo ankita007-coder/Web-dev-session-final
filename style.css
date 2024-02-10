@@ -1,0 +1,51 @@
+body{
+    font-family: 'Arial','sans-serif';
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header p{
+    font-style: italic;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.blog-post{
+    width: 25%;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: ease-in 0.2s;
+}
+
+.blog-post:hover{
+    box-shadow: none;
+}
+h2{
+    color: #333;
+    text-align: center;
+}
+.blog-post p{
+    text-align: justify;
+}
+@media  screen and (max-width: 992px) {
+    .blog-post{
+        width: 100%;
+        height: auto;
+    }
+}
